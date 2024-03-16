@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <script src="./Portafolio_files/script.js.descarga"></script> <!-- Enlazar el archivo de JavaScript -->
+    <title>Portafolio</title>
+<link rel="stylesheet" type="text/css" href="./Portafolio_files/index.css"></head>
+<body>
+   <!-- Header -->
+   <header>
+      <div class="logo">
+         <a href="http://127.0.0.1:5500/index.html">
+            <img class="icon" src="./Portafolio_files/icono.png" alt="Logo">
+         </a>
+      </div>
+      <nav>
+         <ul class="lista">
+            <li><a href="http://127.0.0.1:5500/index.html">Información</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html">Contacto</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!--AQUI EMPIEZA EL CONTENIDO-->
+   <main>
+      <article style="
+    padding-left: 40px;
+">
+         <div class="contenido-1" style="">
+            <a href="https://nicolascastiblanco.github.io/encriptador.github.io/" target="_blank">
+               <img src="./Portafolio_files/descarga.png" alt="Alura">
+            </a>
+            <p>Creación de una página con encriptación</p>
+         </div>
+         
+         <div class="contenido-2" style=""> contenido </div>
+         <div class="nuevo-div-3" style="">Contenido adicional 1</div>
+         <div class="nuevo-div-4" style="">Contenido adicional 2</div>
+      </article>
+   </main>
+   <!-- Footer -->
+   <footer>
+      <div class="linksfoot">
+         <a href="https://www.linkedin.com/in/bryan-nicolas-castiblanco-martinez-3a0a3a218/" target="_blank">
+            <img src="./Portafolio_files/linkedin.png" alt="LinkedIn" style="">
+         </a>
+         <a href="https://github.com/Nicolascastiblanco" target="_blank">
+            <img src="./Portafolio_files/github.png" alt="GitHub" style="">
+         </a>
+         <a href="https://www.instagram.com/brnicolas_m/" target="_blank">
+            <img src="./Portafolio_files/instagram.png" alt="Instagram" style="">
+         </a>
+      </div>
+   </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
